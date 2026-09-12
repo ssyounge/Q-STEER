@@ -1,20 +1,26 @@
 <div align="center">
   <h1>Q-STEER</h1>
+
   <h3>Attention-Logit Steering to Compositional Generalization for Continual VQA</h3>
+
   <p>
     <strong>Suyoung Yang</strong><br>
     Department of Artificial Intelligence, Yonsei University<br>
     Seoul, Republic of Korea<br>
     suyoung425@yonsei.ac.kr
   </p>
+
   <p>
-    <img src="https://img.shields.io/badge/ECCV-2026-8A2BE2.svg" alt="ECCV 2026">
+    <a href="https://eccv.ecva.net/virtual/2026/poster/5723"><img src="https://img.shields.io/badge/ECCV-2026-8A2BE2.svg" alt="ECCV 2026"></a>
+    <a href="https://eccv.ecva.net/virtual/2026/poster/5723"><img src="https://img.shields.io/badge/paper-ECCV-blue.svg" alt="Paper"></a>
     <img src="https://img.shields.io/badge/release-selected%20modules-orange.svg" alt="Selected modules">
     <a href="#citation"><img src="https://img.shields.io/badge/citation-BibTeX-blue.svg" alt="Citation"></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License"></a>
   </p>
+
   <img src="./assets/qsteer_overview.jpg" width="78%" alt="Q-STEER method overview">
 </div>
+
 
 ---
 
