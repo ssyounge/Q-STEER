@@ -7,7 +7,7 @@ authors:
     given-names: "Suyoung"
 
 license: "MIT"
-repository-code: "https://github.com/ssyounge/qsteer_workspace"
+repository-code: "https://github.com/ssyounge/Q-STEER"
 
 preferred-citation:
   type: conference-paper
