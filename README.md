@@ -55,7 +55,7 @@ On continual VQA v2, **Q-STEER** obtains **53.68** average performance and **4.5
 
 ---
 
-## Results at a Glance
+## Results Reported in the Paper
 
 <table>
   <thead>
@@ -89,11 +89,9 @@ On continual VQA v2, **Q-STEER** obtains **53.68** average performance and **4.5
 
 ## Scope of This Release
 
-This repository provides **selected implementation modules** and **reproducibility materials** for Q-STEER.
+This repository provides **selected implementation modules** for Q-STEER, a configuration example, and implementation notes.
 
-The current release includes selected Q-STEER modules, configuration examples, evaluation utilities, result tables, and implementation notes. It is intended to document the core components of the method and support verification of the reported metrics.
-
-This repository is **not** a one-command end-to-end training release. Additional cleanup may be added over time.
+The full training and evaluation pipeline and pretrained Q-STEER checkpoints are not included.
 
 ---
 

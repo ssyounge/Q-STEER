@@ -1,0 +1,47 @@
+# Q-STEER configuration matching the ECCV 2026 paper.
+schema_version: 1
+method: qsteer
+task_agnostic_inference: true
+
+# Pass this mapping to QSTEERRuntimeSettings(**config["runtime"]).
+runtime:
+  expert_num: 32
+  expert_init: 8
+  topk_update: 2
+  late_layer_count: 6
+  icr_rank: 8
+  icr_scale: 0.3
+  probe_samples: 128
+  beta_thr: 0.5
+  expansion_candidate_last_n: 6
+  strict_q_only: true
+
+# Pass these fields to QSTEERMOELoraConfig together with the runtime expert count
+# and top-K value. The rank is defined per expert.
+adapter:
+  expert_rank: 8
+
+controller_inputs:
+  context: question_tokens_only
+  attention_drift:
+    pass: prompt_only
+    query_positions: answer_start
+    key_positions: visual_tokens
+    divergence: kl_current_to_reference
+    softmax_dtype: float32
+    diagnostic_only: true
+
+expansion:
+  initial_task_index: 0
+  enabled_for_post_initial_tasks: true
+  preallocated_slots: true
+  promotion: active_mask_only
+
+icr:
+  insertion: pre_softmax_attention_logits
+  query_positions: answer_tokens_only
+
+objective:
+  type: autoregressive_cross_entropy
+  auxiliary_kl_loss: false
+  attention_distillation_loss: false

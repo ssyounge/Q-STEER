@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+
+title: "Q-STEER"
+authors:
+  - family-names: "Yang"
+    given-names: "Suyoung"
+
+license: "MIT"
+repository-code: "https://github.com/ssyounge/qsteer_workspace"
+
+preferred-citation:
+  type: conference-paper
+  title: "Attention-Logit Steering to Compositional Generalization for Continual VQA"
+  authors:
+    - family-names: "Yang"
+      given-names: "Suyoung"
+  year: 2026
+  date-published: 2026-09-11
+  doi: "10.1007/978-3-032-37432-5_21"
+  collection-title: "Computer Vision – ECCV 2026"
+  collection-type: proceedings
+  volume: "17032"
+  start: 367
+  end: 380
+  publisher:
+    name: "Springer"
+  conference:
+    name: "European Conference on Computer Vision (ECCV 2026)"
